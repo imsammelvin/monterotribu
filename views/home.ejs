@@ -1,0 +1,30 @@
+<%- include("header"); -%>
+
+<div class="hero-img">
+</div>
+
+<p class="home-quote"> <%= startingContent %> </p>
+
+
+<div class="row">
+
+    <% posts.forEach(post => { %>
+
+        
+        <div class="col-md-4">
+            <div class="card text-center card-home" style="width: 30rem;">
+                <img class="card-img-top" src="" alt="">
+                <div class="card-body">
+                <h5 class="card-author">Author: <%= post.author %></h5>    
+                <h3 class="card-title color"><%= post.title %></h3>
+                <p class="card-text"><%= post.content.substring(0, 100) + '...' %></p>
+                <a href="/posts/<%= post._id %> " class="btn btn-primary card-button">Read More</a>
+                </div>
+            </div>
+        </div>
+ 
+    <% }); %> 
+
+</div> 
+    
+<%- include("footer"); -%>

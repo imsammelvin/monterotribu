@@ -1,0 +1,33 @@
+<%- include('header.ejs') %>
+
+<h1 class="contact-business"> Lets talk Business.</h1>
+
+<div class=" contact-container ">
+
+    <div class="contact-svg">
+        <img src="../public/img/contact.svg" alt="">
+    </div>
+    
+    <form class="contact" action="/contact" method="post">
+        <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control contact-form" id="inputName" name="contactName" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control contact-form" id="inputEmail" aria-describedby="emailHelp" name="contactEmail" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="postContent">Message</label>
+            <textarea name="contactMsg" class="form-control input-margin contact-textarea" rows="3" cols="40" placeholder="Write to me..."></textarea>
+        </div>   
+        <button type="submit" class="btn btn-primary btn-block contact-btn">SEND MESSAGE</button>
+    </form>
+    
+</div>
+
+
+
+
+
+<%- include('footer.ejs') %>

@@ -1,0 +1,23 @@
+<%- include("header"); -%>
+
+<div class="subscribe">
+
+  <div class="card text-right card w-50" style="width: 60%;" >
+    <div class="card-body card-subscribe">
+      <form class="subscribe-form" action="/subscribe" method="post" >
+        <div class="form-group">
+            <label for="inputName">Name</label>
+            <input type="text" class="form-control contact-form" id="inputName" name="subscribeName" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control contact-form" id="inputEmail" aria-describedby="emailHelp" name="subscribeEmail" placeholder="Enter email">
+        </div> 
+        <button type="submit" class="btn btn-danger">SUBSCRIBE</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<%- include("footer"); -%>

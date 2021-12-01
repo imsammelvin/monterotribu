@@ -1,0 +1,14 @@
+<%- include('header.ejs') %>
+
+<h1>Write</h1>
+<form class="write" action="/write" method="post">
+  <label for="title">Author</label>
+  <input type="text" class="form-control input-margin" name="postAuthor" placeholder="Post Title">
+  <label for="title">Title</label>
+  <input type="text" class="form-control input-margin" name="postTitle" placeholder="Post Title">
+  <label for="postContent">Post</label>
+  <textarea name="postContent" class="form-control input-margin" rows="8" cols="140" placeholder="Enter your post here"></textarea>
+  <button class="btn btn-primary write-btn" type="submit">Publish</button>
+</form>
+
+<%- include('footer.ejs') %>
